@@ -19,6 +19,8 @@ serv = do
     print y
     forever $ do
       msg <- NBS.recv x 400000
+      print "Got message:"
+      print msg
       print "Sending pong...."
       NBS.sendAll soc "ppong"
       print "alll done"
