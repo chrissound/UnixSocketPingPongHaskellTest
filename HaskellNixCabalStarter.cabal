@@ -1,0 +1,26 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: c2c50854c3c724fc84eb9cd239bf01ad56ea544ff3804abec73f6ffc9e42ee41
+
+name:                HaskellNixCabalStarter
+version:             0.1.0.0
+author:              HaskellNixCabalStarter
+maintainer:          HaskellNixCabalStarter
+license:             MIT
+build-type:          Simple
+
+executable app
+  main-is: Main.hs
+  other-modules:
+      Server
+      Paths_HaskellNixCabalStarter
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.12 && <4.13
+    , network
+  default-language: Haskell2010
